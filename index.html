@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)" /> 
 </head>
 <body>
@@ -54,9 +54,6 @@
                             <img src="./assets/icons/trending-down.svg" />
                         </div>
                     </div>
-                    <div class="main-tables-container--right-arrow" id="right-arrow">
-                        <img src="./assets/icons/right-arrow.svg">
-                    </div>
                 </div>
                 <!-- second table -->
                 <div id ="second-table" class="main-currency-table">
@@ -71,14 +68,11 @@
                         <p class="left">Coinext</p>
                         <p class="right right-second">$ 14.96</p>
                     </div>
-                    <div class="main-tables-container--left-arrow" id="left-arrow">
-                        <img src="./assets/icons/right-arrow.svg">
-                    </div>
-                </div>
-                <div class="currency-table--date">
-                    <p><b>Actualizado:</b> 19 Julio 23:45</p>
                 </div>
             </section>
+            <div class="currency-table--date">
+                <p><b>Actualizado:</b> 19 Julio 23:45</p>
+            </div>
         </section>
         <section class="main-product-detail">
             <span class="product-detail--batata-logo"></span>
@@ -164,23 +158,5 @@
             <img src="./assets/img/logo-footer.svg" alt="Logo de Batatabit 2020" />
         </section>
     </footer>
-    <script>
-        const firstTable = document.getElementById('first-table');
-        const secondTable = document.getElementById('second-table');
-        const rightArrow = document.getElementById('right-arrow');
-        const leftArrow = document.getElementById('left-arrow');
-        rightArrow.addEventListener('click', () => {
-            secondTable.style.display = 'block';
-            firstTable.style.display = 'none';
-            rightArrow.style.display = 'none';
-            leftArrow.style.display = 'block';
-        });
-        leftArrow.addEventListener('click', () => {
-            secondTable.style.display = 'none';
-            firstTable.style.display = 'block';
-            rightArrow.style.display = 'block';
-            leftArrow.style.display = 'none';
-        });
-    </script>
 </body>
 </html>
